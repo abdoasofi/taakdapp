@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-12 09:50:23.227458",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "awarding_body",
+  "license_or_certificate_number",
+  "date_awarded",
+  "your_name_varies",
+  "column_break_gwmk",
+  "award_name_description",
+  "issuing_country",
+  "is_an_expiration_date",
+  "expiration_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "awarding_body",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Awarding Body"
+  },
+  {
+   "fieldname": "license_or_certificate_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "License or Certificate Number"
+  },
+  {
+   "fieldname": "date_awarded",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Awarded"
+  },
+  {
+   "default": "0",
+   "fieldname": "your_name_varies",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is your current legal name different from the name on your license or certification?"
+  },
+  {
+   "fieldname": "column_break_gwmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "award_name_description",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Award Name Description"
+  },
+  {
+   "fieldname": "issuing_country",
+   "fieldtype": "Link",
+   "label": "Issuing Country",
+   "options": "Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_an_expiration_date",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is there an expiration date on your License or Certificate? "
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "label": "Expiration Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-12 10:01:43.394871",
+ "modified_by": "Administrator",
+ "module": "Taakd App",
+ "name": "Professional Qualification",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

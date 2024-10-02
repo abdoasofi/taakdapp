@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AI-.YYYY.-.DD.-.MM.-.########",
+ "creation": "2024-09-14 10:11:17.044016",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ke8e",
+  "amended_from",
+  "email",
+  "first_name",
+  "middle_name",
+  "column_break_visu",
+  "payd_from",
+  "last_name",
+  "_full_name",
+  "language",
+  "section_break_vuey",
+  "column_break_wrlb",
+  "company_email",
+  "column_break_oowb",
+  "company_name",
+  "service_package_section",
+  "package",
+  "other_services",
+  "section_break_ovyy",
+  "package_price",
+  "column_break_jqxw",
+  "other_services_price",
+  "column_break_pcak",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ke8e",
+   "fieldtype": "Section Break",
+   "label": "Applicant Information"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Applicant Invitation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_visu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payd_from",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payd From",
+   "options": "\nCompany\nEmployee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "company.full_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_vuey",
+   "fieldtype": "Section Break",
+   "label": "Company Information"
+  },
+  {
+   "fieldname": "column_break_oowb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "column_break_wrlb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Link",
+   "label": "Company Email",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Language",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_package_section",
+   "fieldtype": "Section Break",
+   "label": "Service Package"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "options": "Product Bundle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "other_services",
+   "fieldtype": "Table",
+   "label": "Other Services",
+   "no_copy": 1,
+   "options": "Other Services"
+  },
+  {
+   "fieldname": "_full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "package_price",
+   "fieldtype": "Currency",
+   "label": "Package Price"
+  },
+  {
+   "fieldname": "section_break_ovyy",
+   "fieldtype": "Section Break",
+   "label": "Price Details"
+  },
+  {
+   "fieldname": "column_break_jqxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_services_price",
+   "fieldtype": "Currency",
+   "label": "Other Services Price"
+  },
+  {
+   "fieldname": "column_break_pcak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-26 03:11:42.075988",
+ "modified_by": "Administrator",
+ "module": "Taakd App",
+ "name": "Applicant Invitation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

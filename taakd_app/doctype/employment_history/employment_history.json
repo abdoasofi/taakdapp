@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-12 09:17:22.563284",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_kpqr",
+  "continuous",
+  "company_location_section",
+  "country",
+  "governorate",
+  "column_break_yyrj",
+  "city",
+  "location_text",
+  "section_break_psao",
+  "from_date",
+  "end_date",
+  "name_of_your_employer",
+  "phone",
+  "ext",
+  "type_of_employment",
+  "contact_the_employer",
+  "column_break_sqvx",
+  "issuing_salary",
+  "activity_has_stopped",
+  "the_company_has_different_names",
+  "different_company_names",
+  "official_job_title_held_currently",
+  "you_have_a_nicknamecx",
+  "nickname",
+  "choose_a_file_section",
+  "file"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company"
+  },
+  {
+   "fieldname": "column_break_kpqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "I am currently working in this job",
+   "fieldname": "continuous",
+   "fieldtype": "Check",
+   "label": "Continuous"
+  },
+  {
+   "fieldname": "company_location_section",
+   "fieldtype": "Section Break",
+   "label": "Company Location"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Location"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Muhafazah (Governorate)",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_yyrj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "City",
+   "options": "Location"
+  },
+  {
+   "fieldname": "section_break_psao",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_sqvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Yes: issued by this company or one of its subsidiaries.\nNo: It was released by a different company.",
+   "fieldname": "issuing_salary",
+   "fieldtype": "Check",
+   "label": "Does this employer issue your paycheck? "
+  },
+  {
+   "default": "0",
+   "fieldname": "activity_has_stopped",
+   "fieldtype": "Check",
+   "label": "Activity Has Stopped"
+  },
+  {
+   "default": "0",
+   "fieldname": "the_company_has_different_names",
+   "fieldtype": "Check",
+   "label": "The Company has Different Names"
+  },
+  {
+   "fieldname": "name_of_your_employer",
+   "fieldtype": "Data",
+   "label": "Name of your employer"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone"
+  },
+  {
+   "fieldname": "ext",
+   "fieldtype": "Data",
+   "label": "Ext"
+  },
+  {
+   "fieldname": "type_of_employment",
+   "fieldtype": "Select",
+   "label": "Type of Employment",
+   "options": "\nFull-Time\nPart-Time\nContract\nInternship"
+  },
+  {
+   "fieldname": "different_company_names",
+   "fieldtype": "Data",
+   "label": "Different Company Names"
+  },
+  {
+   "default": "0",
+   "description": "During this employment, did you use a name other than the name that appears on your current government-issued ID?",
+   "fieldname": "you_have_a_nicknamecx",
+   "fieldtype": "Check",
+   "label": "You Have a Nickname"
+  },
+  {
+   "fieldname": "nickname",
+   "fieldtype": "Data",
+   "label": "Nickname"
+  },
+  {
+   "fieldname": "choose_a_file_section",
+   "fieldtype": "Section Break",
+   "label": "Choose a file"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "File"
+  },
+  {
+   "fieldname": "location_text",
+   "fieldtype": "Data",
+   "label": "Location Text"
+  },
+  {
+   "fieldname": "official_job_title_held_currently",
+   "fieldtype": "Data",
+   "label": "Official Job Title Held Currently"
+  },
+  {
+   "default": "0",
+   "description": "Yes, I\u2019m available\u2028I understand that this employer will be contacted by Taakd for the purpose of verifying my employment status\n\nNo, I\u2019m not available\n",
+   "fieldname": "contact_the_employer",
+   "fieldtype": "Check",
+   "label": "Do we have permission to contact this current employer?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-30 23:45:08.290744",
+ "modified_by": "Administrator",
+ "module": "Taakd App",
+ "name": "Employment History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

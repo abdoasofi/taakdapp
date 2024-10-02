@@ -1,0 +1,11 @@
+[    {
+    "doctype": "Custom Field",
+    "name": "User-create_new_password",
+    "dt": "User",
+    "default": "0",
+    "fieldname": "create_new_password",
+    "fieldtype": "Check",
+    "insert_after": "new_password",
+    "label": "Create New Password"
+  }
+]

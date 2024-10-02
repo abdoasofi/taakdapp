@@ -1,0 +1,541 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "VIR-.YYYY.-.DD.-.MM.-.######",
+ "creation": "2024-09-12 09:28:16.273067",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information_tab",
+  "personal_information_section",
+  "this_is_my_name_column",
+  "employer_name",
+  "first_name",
+  "last_name",
+  "column_break_vrit",
+  "middle_name",
+  "dont_middle_name",
+  "suffix",
+  "amended_from",
+  "aliases_section",
+  "alias_name",
+  "id_card_information_section",
+  "date_of_birth",
+  "column_break_dskm",
+  "repeat_enter_date_of_birth",
+  "contact_information_tab",
+  "contact_information_section",
+  "email",
+  "column_break_apkf",
+  "is_degree_or_diploma",
+  "mobile_number",
+  "section_break_ecvf",
+  "phone",
+  "available_time_section",
+  "from_time",
+  "column_break_lvmo",
+  "to_time",
+  "current_mailing_address_tab",
+  "current_mailing_address_section",
+  "country",
+  "city",
+  "governorate",
+  "zip_code",
+  "location_text",
+  "column_break_kced",
+  "street_address",
+  "education_information_tab",
+  "education_information_section",
+  "donot_employer",
+  "education_information",
+  "employment_history_tab",
+  "section_break_aplk",
+  "employment_history",
+  "professional_qualification_verification_tab",
+  "professional_qualification_verification_section",
+  "professional_qualification",
+  "screening_disclosure_and_authorization_tab",
+  "screening_disclosure_and_authorization_section",
+  "other_languages",
+  "full_name",
+  "email_address",
+  "i_agree_to_the_electronic_signature",
+  "column_break_sime",
+  "electronic_signature",
+  "i_acknowledge_the_above",
+  "sitteings_tab",
+  "sitteings_section",
+  "payd_from",
+  "company_submitting_application",
+  "company_name",
+  "cost_center",
+  "create_new_password",
+  "subscribe_to_text_messages",
+  "column_break_qosw",
+  "user_id",
+  "user_name",
+  "language",
+  "application_status",
+  "progress_steps",
+  "financial_details_tab",
+  "financial_details_section",
+  "sales_invoice",
+  "column_break_wdkn",
+  "payment_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Information"
+  },
+  {
+   "description": "I certify this is my current legal name, exactly as it is displayed on my government-issued identification document ",
+   "fieldname": "this_is_my_name_column",
+   "fieldtype": "Column Break",
+   "label": "This is my name"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "column_break_vrit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "dont_middle_name",
+   "fieldtype": "Check",
+   "label": "I don't have a middle name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "suffix",
+   "fieldtype": "Select",
+   "label": "Suffix"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Verification Instructions Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "aliases_section",
+   "fieldtype": "Section Break",
+   "label": "Aliases"
+  },
+  {
+   "fieldname": "alias_name",
+   "fieldtype": "Table",
+   "label": "Alias Name",
+   "options": "Alias Name"
+  },
+  {
+   "fieldname": "current_mailing_address_section",
+   "fieldtype": "Section Break",
+   "label": "Current Mailing Address"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "no_copy": 1,
+   "options": "Location"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "Location"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Muhafazah (Governorate)",
+   "options": "Location"
+  },
+  {
+   "fieldname": "zip_code",
+   "fieldtype": "Data",
+   "label": "Zip Code"
+  },
+  {
+   "fieldname": "location_text",
+   "fieldtype": "Data",
+   "label": "Location Text"
+  },
+  {
+   "fieldname": "column_break_kced",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "street_address",
+   "fieldtype": "Long Text",
+   "label": "Street Address"
+  },
+  {
+   "fieldname": "contact_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Information"
+  },
+  {
+   "description": "HireRight may need to contact you from time to time to clarify certain items contained in the data report submitted through your job application.\nWe will never share your email address with others or sell it",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Table",
+   "label": "Phone",
+   "options": "Employer Phone"
+  },
+  {
+   "fieldname": "id_card_information_section",
+   "fieldtype": "Section Break",
+   "label": "ID Card Information"
+  },
+  {
+   "description": "Most public records are stored using name and date of birth.\nTherefore, providing this information allows us to search for these sources accurately",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "column_break_dskm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Most public records are stored using name and date of birth.\nTherefore, providing this information allows us to search for these sources accurately",
+   "fieldname": "repeat_enter_date_of_birth",
+   "fieldtype": "Date",
+   "label": "Repeat Enter Date of Birth"
+  },
+  {
+   "description": "All fields marked with an asterisk ( * ) are required.\nPlease provide your employment history, beginning with the most recent. To add additional employers, click the \"Add\" icon.",
+   "fieldname": "education_information_section",
+   "fieldtype": "Section Break",
+   "label": "Education Information"
+  },
+  {
+   "default": "0",
+   "fieldname": "donot_employer",
+   "fieldtype": "Check",
+   "label": "I do not have a current employer to report"
+  },
+  {
+   "fieldname": "employment_history",
+   "fieldtype": "Table",
+   "label": "Employment History",
+   "options": "Employment History"
+  },
+  {
+   "fieldname": "education_information",
+   "fieldtype": "Table",
+   "label": "Education Information",
+   "options": "Education Information"
+  },
+  {
+   "description": "All fields marked with an asterisk ( * ) are required.\nPlease provide your employment history, beginning with the most recent. To add additional employers, click the \"Add\" icon.",
+   "fieldname": "section_break_aplk",
+   "fieldtype": "Section Break",
+   "label": "Employment History"
+  },
+  {
+   "fieldname": "professional_qualification_verification_section",
+   "fieldtype": "Section Break",
+   "label": "Professional qualification verification"
+  },
+  {
+   "fieldname": "professional_qualification",
+   "fieldtype": "Table",
+   "label": "Professional qualification",
+   "options": "Professional Qualification"
+  },
+  {
+   "fieldname": "screening_disclosure_and_authorization_section",
+   "fieldtype": "Section Break",
+   "label": "Screening Disclosure and Authorization"
+  },
+  {
+   "fieldname": "other_languages",
+   "fieldtype": "Table MultiSelect",
+   "label": "Other Languages",
+   "options": "Other Languages"
+  },
+  {
+   "fieldname": "column_break_sime",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "If you are using a mouse, you will need to hold down your left mouse button while you draw.",
+   "fieldname": "electronic_signature",
+   "fieldtype": "Signature",
+   "label": "Electronic signature"
+  },
+  {
+   "description": "Please ensure the email address provided is correct. A copy of the signed consent form will be sent to this address if permitted by the company that requested the background report.",
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "E-Mail Address"
+  },
+  {
+   "default": "0",
+   "description": "My clicking the \u201cAccept & Continue\u201d button constitutes my electronic signature to this document.",
+   "fieldname": "i_acknowledge_the_above",
+   "fieldtype": "Check",
+   "label": "I certify that I am the person identified "
+  },
+  {
+   "default": "0",
+   "fieldname": "i_agree_to_the_electronic_signature",
+   "fieldtype": "Check",
+   "label": "I understand that I am using electronic means to sign this document"
+  },
+  {
+   "fieldname": "education_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Education Information"
+  },
+  {
+   "fieldname": "contact_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "employment_history_tab",
+   "fieldtype": "Tab Break",
+   "label": "Employment History"
+  },
+  {
+   "fieldname": "professional_qualification_verification_tab",
+   "fieldtype": "Tab Break",
+   "label": "Professional qualification verification"
+  },
+  {
+   "fieldname": "screening_disclosure_and_authorization_tab",
+   "fieldtype": "Tab Break",
+   "label": "Screening Disclosure and Authorization"
+  },
+  {
+   "fieldname": "personal_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "current_mailing_address_tab",
+   "fieldtype": "Tab Break",
+   "label": "Current Mailing Address"
+  },
+  {
+   "fieldname": "sitteings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sitteings"
+  },
+  {
+   "fieldname": "payd_from",
+   "fieldtype": "Select",
+   "label": "Payd From",
+   "no_copy": 1,
+   "options": "\nCompany\nEmployee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qosw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_submitting_application",
+   "fieldtype": "Link",
+   "label": "The Company Submitting The Application",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "no_copy": 1,
+   "options": "Language",
+   "read_only": 1
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User ID",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_submitting_application.full_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "user_id.full_name",
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "user_id.create_new_password",
+   "fieldname": "create_new_password",
+   "fieldtype": "Check",
+   "label": "Create New Password"
+  },
+  {
+   "default": "0",
+   "fieldname": "subscribe_to_text_messages",
+   "fieldtype": "Check",
+   "label": "Subscribe to Text Messages"
+  },
+  {
+   "default": "New Request",
+   "fieldname": "application_status",
+   "fieldtype": "Select",
+   "label": "Application Status",
+   "options": "New Request\nIn Progress\nSubmitted\nVerification Started\nMore Info Needed\nWriting report\nReport is ready",
+   "read_only": 1
+  },
+  {
+   "default": "Step 1",
+   "fieldname": "progress_steps",
+   "fieldtype": "Select",
+   "label": "Progress Steps",
+   "options": "Step 1\nStep 2\nStep 3\nStep 4\nStep 5\nStep 6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "available_time_section",
+   "fieldtype": "Section Break",
+   "label": "Available Time"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "From"
+  },
+  {
+   "fieldname": "column_break_lvmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "To"
+  },
+  {
+   "fieldname": "financial_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Financial Details"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "column_break_wdkn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sales_invoice.status",
+   "fieldname": "payment_status",
+   "fieldtype": "Data",
+   "label": "Payment Status"
+  },
+  {
+   "fieldname": "financial_details_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Details"
+  },
+  {
+   "fieldname": "sitteings_section",
+   "fieldtype": "Section Break",
+   "label": "Sitteings"
+  },
+  {
+   "fieldname": "employer_name",
+   "fieldtype": "Data",
+   "label": "Employer Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_degree_or_diploma",
+   "fieldtype": "Check",
+   "label": "Did you obtain the degree or diploma? *"
+  },
+  {
+   "fieldname": "column_break_apkf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ecvf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-01 20:32:54.064689",
+ "modified_by": "Administrator",
+ "module": "Taakd App",
+ "name": "Verification Instructions Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

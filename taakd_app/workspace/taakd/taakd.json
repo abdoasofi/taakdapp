@@ -1,0 +1,94 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"fekOGaxrYP\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Taakd</span>\",\"col\":12}},{\"id\":\"ba1GBCr04C\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Verification  Request\",\"col\":3}},{\"id\":\"M4fUrI2sIV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Applicant Invitation\",\"col\":3}},{\"id\":\"nYUKSS1TjX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Applicant Report\",\"col\":3}},{\"id\":\"W-2flbA4qH\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"MBIIQtCGg3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service\",\"col\":3}},{\"id\":\"sRS8qQ_6LT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Package\",\"col\":3}},{\"id\":\"pVuNkSsW1A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service Price\",\"col\":3}},{\"id\":\"33YfMcrihr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Tp3jgFolXK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"id\":\"i64DdCIANj\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Mqomd3BwLh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Taakd Settings\",\"col\":3}}]",
+ "creation": "2024-09-11 11:00:47.148645",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "view",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Taakd",
+ "links": [],
+ "modified": "2024-09-25 00:06:40.625422",
+ "modified_by": "Administrator",
+ "module": "Taakd App",
+ "name": "Taakd",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service",
+   "link_to": "Item",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sales Invoice",
+   "link_to": "Sales Invoice",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Package",
+   "link_to": "Product Bundle",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Applicant Invitation",
+   "link_to": "Applicant Invitation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Verification  Request",
+   "link_to": "Verification Instructions Request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Taakd Settings",
+   "link_to": "Taakd Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Applicant Report",
+   "link_to": "Applicant Report",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service Price",
+   "link_to": "Item Price",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Taakd"
+}
