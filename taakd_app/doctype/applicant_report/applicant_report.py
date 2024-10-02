@@ -26,5 +26,5 @@ class ApplicantReport(Document):
 
 	@staticmethod
 	def get_stats(args):
-		pass
+		pass 
 

@@ -4,10 +4,10 @@ with open('requirements.txt') as f:
 	install_requires = f.read().strip().split('\n')
 
 # get version from __version__ variable in taakd_new/__init__.py
-from taakd_new import __version__ as version
+from taakdapp import __version__ as version
 
 setup(
-	name='taakd_new',
+	name='taakdapp',
 	version=version,
 	description='customize in erpnext',
 	author='Taakd',
